@@ -1,0 +1,13 @@
+{
+  "name": "nextstep",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A concept for Angel One: turning the IPO money moment into a second investment.",
+  "scripts": {
+    "start": "npx --yes serve site",
+    "test": "node --test tests/*.test.js",
+    "evals": "node evals/run.mjs && node evals/run.mjs --today",
+    "check": "npm test && node evals/run.mjs"
+  },
+  "engines": { "node": ">=18" }
+}

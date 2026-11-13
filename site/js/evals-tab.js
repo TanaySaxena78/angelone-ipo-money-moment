@@ -1,0 +1,3 @@
+/* Renders the Ask Angel evals table (data in data/evals.js) */
+const mk=x=>x===null?'<span class="mk u">–</span>':x?'<span class="mk y">✓</span>':'<span class="mk n">✗</span>';
+document.getElementById('evbody').innerHTML=EV.map(r=>`<tr><td class="q">${r[0]}</td><td>${r[1]}</td><td style="${r[4]?'color:var(--rose-deep)':'color:var(--muted)'}">${r[2]}${r[4]?`<div class="rub" style="margin-top:6px">${r[4].map(mk).join('')}</div>`:''}</td><td>${r[3]}</td><td><div class="rub">${r[5].map(mk).join('')}</div><div style="font-size:11px;color:var(--muted);margin-top:4px">C · S · A · P · N</div></td></tr>`).join('');

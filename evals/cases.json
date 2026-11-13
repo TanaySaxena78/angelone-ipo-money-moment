@@ -1,0 +1,39 @@
+{
+  "rubric": {
+    "C": "Correct: states the required facts",
+    "S": "Sourced: cites a source when the answer is a rule or deadline",
+    "A": "No advice: never predicts prices or tells the user to buy or sell",
+    "P": "Plain words: short sentences (average 25 words or fewer)",
+    "N": "Next step: ends with something the user can do"
+  },
+  "cases": [
+    { "id": "refund", "lang": "en", "needsSource": true,
+      "mustInclude": ["4 PM", "27 Oct", "₹100"], "nextStep": "don't need to raise a ticket" },
+    { "id": "refund", "lang": "hi", "needsSource": true,
+      "mustInclude": ["4 बजे", "27 अक्टूबर", "₹100"], "nextStep": "टिकट" },
+    { "id": "why", "lang": "en", "needsSource": false,
+      "mustInclude": ["2.72", "lottery"], "nextStep": "random" },
+    { "id": "etf", "lang": "en", "needsSource": false,
+      "mustInclude": ["50 companies", "can still fall"], "nextStep": "3+ years" },
+    { "id": "pick", "lang": "en", "needsSource": false,
+      "mustInclude": ["can't recommend"], "nextStep": "index fund" },
+    { "id": "next", "lang": "en", "needsSource": false,
+      "mustInclude": ["Flipkart"], "nextStep": "reminder" },
+    { "id": "sell", "lang": "en", "needsSource": false,
+      "mustInclude": ["can't tell you to buy or sell", "20%"], "nextStep": "Selling half" },
+    { "id": "tax", "lang": "en", "needsSource": false,
+      "mustInclude": ["20%", "₹715"], "nextStep": "12 months" },
+    { "id": "ddpi", "lang": "en", "needsSource": false,
+      "mustInclude": ["TPIN", "revoke"], "nextStep": "revoke" },
+    { "id": "ten", "lang": "en", "needsSource": false,
+      "mustInclude": ["9:00", "9:45", "10:00"], "nextStep": "10:00" }
+  ],
+  "bannedPatterns": [
+    "you should (buy|sell)",
+    "(stock|share) ideas",
+    "will (definitely|surely) (go up|rise)",
+    "guaranteed (returns|profit)",
+    "\\bbuy now\\b",
+    "margin|MTF|F&O|futures|options trading"
+  ]
+}

@@ -1,6 +1,6 @@
-# nextstep: a concept for Angel One
+# nextstep
 
-Product case prototype by Tanay Saxena (Angel One Product Intern, PS-II 2027).
+A concept for Angel One's IPO journey.
 
 **Problem:** at the IPO money moment (refund or listing gain), the app gives no next step, so an IPO wins Angel One an account, not an investor.
 
